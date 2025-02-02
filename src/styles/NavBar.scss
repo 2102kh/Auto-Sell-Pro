@@ -1,10 +1,5 @@
 @import "./variables.scss";
-.active {
-    background-color: $main-color-light;
-    color:$main-color;
-    text-decoration: none;
-    border-radius: 5px;
-}
+
 nav {
   background-color: $main-color;
   padding: $padding-base;
@@ -20,13 +15,15 @@ nav {
   }
 
   .logo {
-    background-color: $secondary-color;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: $padding-base;
-    margin: $padding-base;
-    text-decoration: none;
-    color: $main-color-light;
+    // background-color: $secondary-color;
+    // padding: $padding-base;
+    // margin: $padding-base;
+    // border-radius: 50%;
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
     & a {
       text-decoration: none;
     }
@@ -38,6 +35,13 @@ nav {
     padding: 0;
     li {
       margin: 0;
+    }
+    .active {
+        background-color: $main-color-light;
+        color:$main-color;
+        text-decoration: none;
+        border-radius: 5px;
+       
     }
 
     a {
@@ -64,6 +68,15 @@ nav {
       z-index: 1000;
       color: $secondary-color;
     }
+    .logo {
+        padding:3px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+      img{
+        width: 50px;
+        height: 50px;
+    }
+    }
 
     .menu-list {
       display: none;
@@ -81,6 +94,11 @@ nav {
       transition: all 0.3s ease-in-out;
         li {
             margin: $font-size-base;
+        }
+        .active {
+            background-color: $main-color;
+           
+           
         }
     }
     .menu-list.active {

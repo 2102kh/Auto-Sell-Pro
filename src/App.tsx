@@ -9,13 +9,11 @@ import Contact from './components/Contact'
 import './styles/main.scss';
 
 function App() {
- 
+
 
   return (
     <>
-      
-      <NavBarMenu/>
-      <div>Wellcome to AutoCashDeal</div>
+      <NavBarMenu />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />

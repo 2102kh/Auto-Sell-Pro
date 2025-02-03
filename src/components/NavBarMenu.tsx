@@ -11,24 +11,25 @@ const NavBarMenu = () => {
     const toggleNavbar = () => {
         setIsResponsive(!isResponsive);
     }
-
     return (
         <nav>
-            <NavLink  to={'/'} className='logo'>
+            <NavLink to={'/'} className='logo'>
                 <img src={logo} alt="logo" />
+                <div>AutoCashDeal</div>
             </NavLink>
             <ul className={`menu-list ${isResponsive ? 'active' : ""}`}>
+                <li>
+                    <NavLink to={'/'}>Home</NavLink>
+                </li>
                 <li>
                     <NavLink to={'/about'}>About Company</NavLink>
                 </li>
                 <li>
                     <NavLink to={'/services'}>Our Services</NavLink>
                 </li>
+
                 <li>
                     <NavLink to={'/contact'}>Contact</NavLink>
-                </li>
-                <li>
-                    <NavLink to={''}>Auto</NavLink>
                 </li>
             </ul>
             <div className="menu-icon" onClick={toggleNavbar}>
